@@ -2,39 +2,44 @@
 <html>
    <head>
        <!-- specify the title -->
-      
+      <title>Coding Hive: Handwriting Sample</title>
       <!-- link to the compressed version of jquery.js -->
-      
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
       <!-- link to the js file -->
-       
+       <script src="scripts.js"></script>
        <!-- link to the style sheet -->
-      
+      <link rel = "stylesheet" type = "text/css" href = "style.css" />
    </head>
    <body>
        <!-- add a header with text Coding Hive: Read handwritten image -->
-      
+      <h1>Coding Hive: Read handwritten image</h1>
       <!-- Add the instruction Enter the URL to an image of handwritten text,
         then click the Read image buttons [NOTE: bold the Read Image]-->
-      
+      Enter the URL to an image of handwritten text, then click
+      the <strong>Read image</strong> button.
       <!-- start with a new line -->
-      
+      <br><br>
       <!-- build a input box and a button, "Read image", to take the url. Add the text message "Image to read:" beside the input box-->
       <!-- You can have a default value in the text box if you like -->
       <!-- link the button to the function processImage() -->
-      
-
-
-
+      Image to read:
+      <input type="text" id="inputImage"
+         value="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cursive_Writing_on_Notebook_paper.jpg/800px-Cursive_Writing_on_Notebook_paper.jpg" />
+      <button onclick="processImage()">Read image</button>
       <!-- start with a new line -->
-      
+      <br><br>
       <!-- Show the response and source image as two columns of a table side by side -->
-      
+      <div id="wrapper">
           <!-- display the response in the text area -->
-         
-
-
+         <div id="jsonOutput">
+            Response:
+            <textarea id="responseTextArea"></textarea>
+         </div>
          <!-- display the image -->
-
-      
+         <div id="imageDiv">
+            Source image:
+            <img id="sourceImage" width="400"/>
+         </div>
+      </div>
    </body>
 </html>
