@@ -5,7 +5,7 @@ function processImage() {
 
     // specify the subscriptionKey and uriBase
     // TODO: Replace <Subscription Key> with your valid subscription key.
-    const subscriptionKey = "3845eaf7d07b432b83472bd15f5fb357";
+    const subscriptionKey = "<Subscription Key>";
 
     // TODO: Replace the regin to your region of subscription key
     const uriBase =
